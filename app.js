@@ -16,10 +16,6 @@ const port = 3000;
 
 // Database connection
 const db = mysql.createConnection({
-  // host: 'localhost',
-  // user: 'root',
-  // password: 'Aditya@2908', // Change this to your MySQL password
-  // database: 'inventory_management'
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
